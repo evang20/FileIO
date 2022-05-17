@@ -1,14 +1,18 @@
 package edu.handong.csee.java.example.fileread.benchmark;
 
 import java.io.*;
+import java.util.Scanner;
+
+import edu.handong.csee.java.example.TextFileInputWithUserFileDemo;
 
 /**
  * Created by sherxon on 4/23/17. https://github.com/sherxon/AlgoDS/tree/master/src/oi
  */
 public class UsingBufferedReader {
+	
     public static void main(String[] args) throws IOException {
-
-
+    	TextFileInputWithUserFileDemo filename = new TextFileInputWithUserFileDemo();
+    	filename.run(args);
         //-------------- Test reading 1 MB file. --------------------
 
         StopWatch.start();
